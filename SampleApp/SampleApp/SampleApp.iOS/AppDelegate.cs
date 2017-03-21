@@ -5,6 +5,10 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+
 namespace SampleApp.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -22,9 +26,10 @@ namespace SampleApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
 
+            global::Xamarin.Forms.Forms.Init();
+            MobileCenter.Start("04bf8602-9fe6-4c46-b047-b073c0033a5e", typeof(Analytics), typeof(Crashes));
+            LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
     }
