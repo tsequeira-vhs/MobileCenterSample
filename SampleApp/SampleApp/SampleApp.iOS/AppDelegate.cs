@@ -5,10 +5,6 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-using Microsoft.Azure.Mobile;
-using Microsoft.Azure.Mobile.Analytics;
-using Microsoft.Azure.Mobile.Crashes;
-
 namespace SampleApp.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -28,7 +24,6 @@ namespace SampleApp.iOS
         {
 
             global::Xamarin.Forms.Forms.Init();
-            MobileCenter.Start("4e3488f1-ccc8-4cbd-b66d-8147ad684c96", typeof(Analytics), typeof(Crashes)); //4e3488f1-ccc8-4cbd-b66d-8147ad684c96
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
