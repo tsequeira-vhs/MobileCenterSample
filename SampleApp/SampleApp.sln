@@ -46,8 +46,6 @@ Global
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|ARM.Build.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|ARM.Deploy.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhone.Deploy.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Release|Any CPU
@@ -100,8 +98,6 @@ Global
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|ARM.Build.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|ARM.Deploy.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhone.Build.0 = Release|Any CPU
-		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhone.Deploy.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{88616E46-1A76-4FE2-8E71-66AC74247862}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
@@ -166,8 +162,6 @@ Global
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|ARM.Build.0 = Release|ARM
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|ARM.Deploy.0 = Release|ARM
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhone.ActiveCfg = Release|x86
-		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhone.Build.0 = Release|x86
-		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhone.Deploy.0 = Release|x86
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|x86
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|x86
 		{B6DBF3C6-0919-4161-BE8C-4AF34E8CA109}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Release|x86
