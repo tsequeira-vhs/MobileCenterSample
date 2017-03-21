@@ -28,7 +28,7 @@ namespace SampleApp.iOS
         {
 
             global::Xamarin.Forms.Forms.Init();
-            MobileCenter.Start("04bf8602-9fe6-4c46-b047-b073c0033a5e", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("4e3488f1-ccc8-4cbd-b66d-8147ad684c96", typeof(Analytics), typeof(Crashes));
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

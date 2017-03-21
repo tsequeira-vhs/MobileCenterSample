@@ -18,7 +18,7 @@ namespace SampleApp.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            MobileCenter.Start("552c69b6-1e22-44f2-94c5-3edac5b31e21", typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("1c171d60-ab72-4e42-a364-dede1066db08", typeof(Analytics), typeof(Crashes));
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
