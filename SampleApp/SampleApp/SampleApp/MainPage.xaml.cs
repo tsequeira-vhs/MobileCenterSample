@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Azure.Mobile.Crashes;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,11 @@ namespace SampleApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void btn_Clicked(object sender, EventArgs e)
+        {
+            Crashes.GenerateTestCrash();
         }
     }
 }
