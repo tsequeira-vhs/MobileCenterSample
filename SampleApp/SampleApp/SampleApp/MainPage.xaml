@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleApp"
              x:Class="SampleApp.MainPage">
-
-	<Label x:FieldModifier="lbl" x:Uid="lbl1" x:Name="lbl2" Text="Welcome to Xamarin Forms!" 
+    <StackLayout>
+        <Label x:FieldModifier="lbl" x:Uid="lbl1" x:Name="lbl2" Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <Button x:Name="btn" Clicked="btn_Clicked" Text="Generate Crash"></Button>
-
+        <Button x:Name="btn" Clicked="btn_Clicked" Text="Generate Crash"></Button>
+        <Button x:Name="btnLogHandledException" Clicked="btnLogHandledException_Clicked" Text="Log Handled Exception"></Button>
+    </StackLayout>
 </ContentPage>
