@@ -26,7 +26,8 @@ namespace SampleApp
         }
 
         protected override void OnSleep()
-        {
+        {          
+
             // Handle when your app sleeps
         }
 
