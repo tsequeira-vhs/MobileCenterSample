@@ -20,5 +20,10 @@ namespace SampleApp
         {
             Crashes.GenerateTestCrash();
         }
+
+        private void BtnNavToTable_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TableDataPage());
+        }
     }
 }
