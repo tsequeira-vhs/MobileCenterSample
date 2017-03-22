@@ -7,7 +7,8 @@
         <Label x:FieldModifier="lbl" x:Uid="lbl1" x:Name="lbl2" Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <Button x:Name="btn" Clicked="btn_Clicked" Text="Generate Crash"></Button>
-    <Button x:Name="btnLogHandledException" Clicked="btnLogHandledException_Clicked" Text="Log Handled Exception"></Button>
-    <Button x:Name="BtnNavToTable" Clicked="BtnNavToTable_Clicked" Text="Go to Settings Table"></Button>
+        <Button x:Name="btn" Clicked="btn_Clicked" Text="Generate Crash"></Button>
+        <Button x:Name="btnLogHandledException" Clicked="btnLogHandledException_Clicked" Text="Log Handled Exception"></Button>
+        <Button x:Name="BtnNavToTable" Clicked="BtnNavToTable_Clicked" Text="Go to Settings Table"></Button>
+    </StackLayout>
 </ContentPage>
