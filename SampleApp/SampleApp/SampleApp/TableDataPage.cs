@@ -32,8 +32,8 @@ namespace SampleApp
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+
             //IMobileServiceTable<Settings> settingsTable = client.GetTable<Settings>();
-            
             //var settingsList = (await settingsTable.ReadAsync()).ToList();
 
             // To get value of setting with key Setting1
