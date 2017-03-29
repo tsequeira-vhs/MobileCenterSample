@@ -10,5 +10,6 @@
         <Button x:Name="btn" Clicked="btn_Clicked" Text="Generate Crash"></Button>
         <Button x:Name="btnLogHandledException" Clicked="btnLogHandledException_Clicked" Text="Log Handled Exception"></Button>
         <Button x:Name="BtnNavToTable" Clicked="BtnNavToTable_Clicked" Text="Go to Settings Table"></Button>
+      <Editor x:Name="txtText"></Editor>
     </StackLayout>
 </ContentPage>

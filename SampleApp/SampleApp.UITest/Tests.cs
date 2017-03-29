@@ -31,6 +31,7 @@ namespace SampleApp.UITest
             app.Screenshot("First screen.");
             app.Tap(c => c.Marked("BtnNavToTable"));
             app.Screenshot("Second screen.");
+            app.EnterText("txtText", "Hello World");
         }
     }
 }
