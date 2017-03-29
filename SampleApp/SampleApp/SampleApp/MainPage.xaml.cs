@@ -32,8 +32,7 @@ namespace SampleApp
             //};
         }
 
-
-        private async void btn_Clicked(object sender, EventArgs e)
+        private async void Btn_Clicked(object sender, EventArgs e)
         {
             ////At any time after starting the SDK, you can check if the app crashed in the previous session
             //bool didAppCrash = Crashes.HasCrashedInLastSession;
@@ -66,7 +65,7 @@ namespace SampleApp
             Crashes.GenerateTestCrash();
         }
 
-        private void btnLogHandledException_Clicked(object sender, EventArgs e)
+        private void BtnLogHandledException_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -103,6 +102,11 @@ namespace SampleApp
         private void BtnNavToTable_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new TableDataPage());
+        }
+
+        private void BtnNavToControlTestPage_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ControlsTestPage());
         }
     }
 }
