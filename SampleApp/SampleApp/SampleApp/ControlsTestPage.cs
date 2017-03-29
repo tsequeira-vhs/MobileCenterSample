@@ -12,21 +12,32 @@ namespace SampleApp
     {
         public ControlsTestPage()
         {
+            var myLabel = new Label {Text = "Hello User"};
+
+
             var checkTapGestureLabel = new Label()
             {
-                Text = "Check Tap Gesture"
+                Text = "checkTapGestureLabel Click"
             };
             TapGestureRecognizer checkTapGestureLabelTapGesture = new TapGestureRecognizer();
             checkTapGestureLabelTapGesture.Tapped += (s, e) =>
             {
-                DisplayAlert("Testapp", "tapped!!!", "Ok");
+                myLabel.Text = "Was clicked";
+                //DisplayAlert("Testapp", "tapped!!!", "Ok");
             };
             checkTapGestureLabel.GestureRecognizers.Add(checkTapGestureLabelTapGesture);
+
+
+
+            Button firstTestButton = new Button() {Text = "Test first Click"};
+
+
 
             Content = new StackLayout
             {
                 Children = {
-                    new Label { Text = "Hello User" },
+                    myLabel,
+                    firstTestButton,
                     checkTapGestureLabel,
                 }
             };
