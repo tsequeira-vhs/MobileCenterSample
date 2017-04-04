@@ -29,7 +29,13 @@ namespace SampleApp.UITest
         public void AppLaunches()
         {
             app.Screenshot("First screen.");
-            app.Tap(c => c.Marked("BtnNavToTable"));
+            app.Repl();
+        }
+
+        [Test]
+        public void NavigateToTablePage()
+        {
+            app.Tap(c => c.Marked("Go to Settings Table"));
             app.Screenshot("Second screen.");
         }
     }

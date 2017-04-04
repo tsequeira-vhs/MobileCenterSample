@@ -21,12 +21,48 @@ namespace SampleApp
 
         public TableDataPage()
         {
+            Button addData = new Button { Text = "Add Data" };
+            addData.Clicked += AddData_Clicked;
+
+            Button deleteData = new Button { Text = "Delete Data" };
+            deleteData.Clicked += DeleteData_Clicked;
+
+            Button updateData = new Button { Text = "Update Data" };
+            updateData.Clicked += UpdateData_Clicked;
+
+            Button syncData = new Button { Text = "Sync Data" };
+            syncData.Clicked += SyncData_Clicked;
+
             Content = new StackLayout
             {
                 Children = {
                     new Label { Text = "Hello Page" },
+                    addData,
+                    updateData,
+                    deleteData,
+                    syncData
                 }
             };
+        }
+
+        private async void SyncData_Clicked(object sender, EventArgs e)
+        {
+            await SyncAsync();
+        }
+
+        private void UpdateData_Clicked(object sender, EventArgs e)
+        {
+            UpdateData();
+        }
+
+        private void DeleteData_Clicked(object sender, EventArgs e)
+        {
+            DeleteData();
+        }
+
+        private void AddData_Clicked(object sender, EventArgs e)
+        {
+            AddData();
         }
 
         protected async override void OnAppearing()
@@ -93,6 +129,27 @@ namespace SampleApp
                     Debug.WriteLine(@"Error executing sync operation. Item: {0} ({1}). Operation discarded.", error.TableName, error.Item["id"]);
                 }
             }
+        }
+
+        public async void AddData()
+        {
+            var settingsTable = client.GetSyncTable<Settings>();
+            Settings newSetting = new Settings { Key = "Setting5", Value = "Value5" };
+            await settingsTable.InsertAsync(newSetting);
+        }
+
+        public async void UpdateData()
+        {
+            var settingsTable = client.GetSyncTable<Settings>();
+            Settings newSetting = new Settings { ID = "19e2cfd324824242ad537ae2e5b12363", Key = "Setting6", Value = "Value6" };
+            await settingsTable.UpdateAsync(newSetting);
+        }
+
+        public async void DeleteData()
+        {
+            var settingsTable = client.GetSyncTable<Settings>();
+            Settings newSetting = new Settings { ID = "19e2cfd324824242ad537ae2e5b12363", Key = "Setting6", Value = "Value6" };
+            await settingsTable.DeleteAsync(newSetting);
         }
     }
 }
